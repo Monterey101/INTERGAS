@@ -483,13 +483,11 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   color: var(--primary-50);
-  /* margin-bottom: 1rem; */
   animation: fadeInUp 1.2s ease-out 0.2s both;
 }
 
 .hero-home .hero-title {
   font-size: 4.5rem;
-  /* margin-bottom: 1.5rem; */
   color: var(--primary-50);
   background: none;
   -webkit-text-fill-color: var(--primary-50);
