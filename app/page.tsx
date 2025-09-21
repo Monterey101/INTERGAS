@@ -3,32 +3,36 @@ import { useState } from "react";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
     {
       image: "/producer.jpg",
       alt: "Energy Production Facilities",
       title: "Energy Production Facilities",
-      description: "Advanced production facilities and strategic partnerships with global energy producers, ensuring reliable sourcing and quality control across diverse energy commodities."
+      description:
+        "Advanced production facilities and strategic partnerships with global energy producers, ensuring reliable sourcing and quality control across diverse energy commodities.",
     },
     {
       image: "/transporter.jpg",
       alt: "Transportation Infrastructure",
       title: "Transportation Infrastructure",
-      description: "Comprehensive logistics network spanning international shipping routes, pipeline systems, and specialized transportation solutions for secure energy commodity delivery."
+      description:
+        "Comprehensive logistics network spanning international shipping routes, pipeline systems, and specialized transportation solutions for secure energy commodity delivery.",
     },
     {
       image: "/distributor.jpg",
       alt: "Energy Distribution Network",
       title: "Distribution Network",
-      description: "Strategic distribution infrastructure connecting global energy markets through advanced logistics networks and reliable supply chain management systems."
+      description:
+        "Strategic distribution infrastructure connecting global energy markets through advanced logistics networks and reliable supply chain management systems.",
     },
     {
       image: "/user.jpg",
       alt: "End-User Solutions",
       title: "End-User Solutions",
-      description: "Tailored energy solutions serving diverse industrial, commercial, and institutional clients across multiple sectors and geographic markets worldwide."
-    }
+      description:
+        "Tailored energy solutions serving diverse industrial, commercial, and institutional clients across multiple sectors and geographic markets worldwide.",
+    },
   ];
 
   const nextSlide = () => {
@@ -39,7 +43,7 @@ export default function Home() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
@@ -67,10 +71,23 @@ export default function Home() {
 
       {/* What We Do */}
       <section className="section">
-        <div className="section-content" style={{textAlign: 'center'}}>
-          <h2 className="section-title">Energy Brokerage & Trade Facilitation</h2>
-          <p style={{fontSize: '1.2rem', marginBottom: '2rem', color: 'var(--neutral-600)', maxWidth: '800px', margin: '0 auto 2rem'}}>
-            INTERGAS is an independent energy brokerage firm specializing in LNG, LPG, and crude oil transactions across Asia-Pacific markets. We connect producers with buyers and facilitate secure commodity trades while managing price risk and logistics coordination.
+        <div className="section-content" style={{ textAlign: "center" }}>
+          <h2 className="section-title">
+            Energy Brokerage & Trade Facilitation
+          </h2>
+          <p
+            style={{
+              fontSize: "1.2rem",
+              marginBottom: "2rem",
+              color: "var(--neutral-600)",
+              maxWidth: "800px",
+              margin: "0 auto 2rem",
+            }}
+          >
+            INTERGAS is an independent energy brokerage firm specializing in
+            LNG, LPG, and crude oil transactions across Asia-Pacific markets. We
+            connect producers with buyers and facilitate secure commodity trades
+            while managing price risk and logistics coordination.
           </p>
         </div>
       </section>
@@ -113,7 +130,12 @@ export default function Home() {
         <div className="gallery-container">
           <div className="gallery-image-container">
             {slides.map((slide, index) => (
-              <div key={index} className={`gallery-slide ${index === currentSlide ? 'active' : ''}`}>
+              <div
+                key={index}
+                className={`gallery-slide ${
+                  index === currentSlide ? "active" : ""
+                }`}
+              >
                 <img src={slide.image} alt={slide.alt} />
               </div>
             ))}
@@ -125,9 +147,11 @@ export default function Home() {
             </button>
             <div className="gallery-nav">
               {slides.map((_, index) => (
-                <div 
+                <div
                   key={index}
-                  className={`gallery-dot ${index === currentSlide ? 'active' : ''}`}
+                  className={`gallery-dot ${
+                    index === currentSlide ? "active" : ""
+                  }`}
                   onClick={() => goToSlide(index)}
                 ></div>
               ))}
@@ -149,35 +173,66 @@ export default function Home() {
           <div className="grid grid-2x2">
             <div className="card">
               <h3 className="card-title">Market Expertise</h3>
-              <p>Deep understanding of global energy markets with real-time analysis and strategic insights across LNG, LPG, and crude oil sectors.</p>
+              <p>
+                Deep understanding of global energy markets with real-time
+                analysis and strategic insights across LNG, LPG, and crude oil
+                sectors.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Global Network</h3>
-              <p>Extensive partnerships spanning producers, transporters, and distributors across Asia-Pacific, Middle East, and international markets.</p>
+              <p>
+                Extensive partnerships spanning producers, transporters, and
+                distributors across Asia-Pacific, Middle East, and international
+                markets.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Risk Management</h3>
-              <p>Advanced hedging strategies and comprehensive risk assessment protocols ensuring secure transactions and market volatility protection.</p>
+              <p>
+                Advanced hedging strategies and comprehensive risk assessment
+                protocols ensuring secure transactions and market volatility
+                protection.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Technology Integration</h3>
-              <p>Cutting-edge trading platforms with automated systems, real-time monitoring, and data-driven decision making capabilities.</p>
+              <p>
+                Cutting-edge trading platforms with automated systems, real-time
+                monitoring, and data-driven decision making capabilities.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Market Leadership</h3>
-              <p>Strategic positioning as Australia's premier energy trading intermediary, leveraging deep market knowledge to secure optimal pricing and reliable supply chains.</p>
+              <p>
+                Strategic positioning as Australia's premier energy trading
+                intermediary, leveraging deep market knowledge to secure optimal
+                pricing and reliable supply chains.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Growth Vision</h3>
-              <p>Aggressive expansion across Asia-Pacific markets with focus on renewable energy integration and sustainable trading practices for long-term market dominance.</p>
+              <p>
+                Aggressive expansion across Asia-Pacific markets with focus on
+                renewable energy integration and sustainable trading practices
+                for long-term market dominance.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Innovation Strategy</h3>
-              <p>Continuous investment in blockchain technology, AI-driven market analysis, and automated trading systems to maintain competitive edge in digital transformation.</p>
+              <p>
+                Continuous investment in blockchain technology, AI-driven market
+                analysis, and automated trading systems to maintain competitive
+                edge in digital transformation.
+              </p>
             </div>
             <div className="card">
               <h3 className="card-title">Sustainable Practices</h3>
-              <p>Environmental responsibility through carbon-neutral operations, green energy partnerships, and ESG-compliant trading practices aligned with global climate goals.</p>
+              <p>
+                Environmental responsibility through carbon-neutral operations,
+                green energy partnerships, and ESG-compliant trading practices
+                aligned with global climate goals.
+              </p>
             </div>
           </div>
         </div>
@@ -185,9 +240,18 @@ export default function Home() {
 
       {/* Call to Action */}
       <section className="section">
-        <div className="section-content" style={{textAlign: 'center'}}>
+        <div className="section-content" style={{ textAlign: "center" }}>
           <h2 className="section-title">Interested in Our Services?</h2>
-          <p style={{fontSize: '1.2rem', marginBottom: '2rem', color: 'var(--neutral-600)'}}>Connect with INTERGAS to explore energy brokerage opportunities and learn how we can support your business objectives.</p>
+          <p
+            style={{
+              fontSize: "1.2rem",
+              marginBottom: "2rem",
+              color: "var(--neutral-600)",
+            }}
+          >
+            Connect with INTERGAS to explore energy brokerage opportunities and
+            learn how we can support your business objectives.
+          </p>
           <a href="/contact" className="btn">
             <span>Contact Us</span>
           </a>
