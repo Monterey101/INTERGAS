@@ -14,33 +14,34 @@ export default function About() {
               className="section-title"
               style={{ marginBottom: "2rem", textAlign: "left" }}
             >
-              Our Story
+              Who are we?
             </h2>
             <p>
-              Founded in 2021 by experienced energy professionals with
-              backgrounds in commodity trading and financial services, INTERGAS
-              emerged to address growing demand for specialized energy brokerage
-              services in the Australian market. Our founding team recognized
-              the opportunity to provide independent advisory and facilitation
-              services as Australia's energy export sector continued to expand
-              and mature.
+              INTERGAS Pty Ltd, a Sydney-based proprietary Australian company,
+              is a global commercial energy brokerage firm and strategic trade
+              facilitator, connecting Australia’s energy markets to leading
+              international partners. Specialising in critical energy
+              commodities, including gas and petroleum products, Intergas
+              orchestrates high-level, exclusive introductions and executes
+              complex transactions with absolute precision and confidence. Our
+              established, long-standing relationships with influential global
+              energy operators enable us to secure pivotal energy supply
+              agreements for the world’s top-tier supply chains.
             </p>
+            <br></br>
             <p>
-              Starting as a boutique consultancy focused on LNG and LPG markets,
-              we have steadily built relationships with producers, traders, and
-              end-users across the Asia-Pacific region. Our approach emphasizes
-              market intelligence, risk assessment, and transaction facilitation
-              rather than proprietary trading, allowing us to serve clients'
-              interests without conflicts.
+              Operating at the forefront of international energy commerce,
+              INTERGAS combines strategic foresight with unrivalled access to
+              global markets, delivering decisive advantage and operational
+              excellence with complete discretion. While our largest endeavours
+              are focused on Australia’s East Coast, our reach (and that of our
+              partners) extends across continents, providing elite operators
+              with unmatched opportunities and market leverage. For the world’s
+              most discerning energy players, INTERGAS Pty Ltd is the definitive
+              partner for executing transformative deals, advancing strategy,
+              and achieving unparalleled impact in the sector.
             </p>
-            <p>
-              Today, INTERGAS operates from our Sydney headquarters, providing
-              brokerage and advisory services across multiple energy
-              commodities. We focus on building long-term partnerships with
-              clients ranging from mid-sized producers to industrial consumers,
-              leveraging our market knowledge and network to facilitate
-              efficient transactions and provide strategic market insights.
-            </p>
+            <p></p>
           </div>
           <div>
             <img
@@ -52,7 +53,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Leadership Team */}
+      {/* Leadership Team
       <section className="section leadership-section">
         <div className="section-content">
           <h2 className="section-title">Leadership Team</h2>
@@ -125,7 +126,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Company Values */}
       <section className="section">

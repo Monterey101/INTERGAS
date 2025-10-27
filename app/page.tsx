@@ -53,7 +53,16 @@ export default function Home() {
       <section className="hero hero-home">
         <div className="hero-container">
           <div className="hero-content">
-            <h1 className="hero-title">INTERGAS</h1>
+            <h1 className="hero-title">
+              <img
+                src="/INTERGAS_PTY_LTD_LOGO.svg"
+                alt=""
+                className="hero-logo-svg"
+              />
+              <div>
+                INTERGAS <span className="hero-title-suffix">Pty Ltd</span>
+              </div>
+            </h1>
             <p className="hero-subtitle">
               Connecting Australia to the international energy market
             </p>
@@ -84,10 +93,11 @@ export default function Home() {
               margin: "0 auto 2rem",
             }}
           >
-            INTERGAS is an independent energy brokerage firm specializing in
-            LNG, LPG, and crude oil transactions across Asia-Pacific markets. We
-            connect producers with buyers and facilitate secure commodity trades
-            while managing price risk and logistics coordination.
+            INTERGAS Pty Ltd is an independent energy brokerage firm
+            specializing in LNG, LPG, and crude oil transactions across
+            Asia-Pacific markets. We connect producers with buyers and
+            facilitate secure commodity trades while managing price risk and
+            logistics coordination.
           </p>
         </div>
       </section>
@@ -157,7 +167,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="gallery-content">
+          <div className="gallery-content" key={currentSlide}>
             <h3 className="gallery-title">{slides[currentSlide].title}</h3>
             <p className="gallery-description">
               {slides[currentSlide].description}
@@ -174,64 +184,84 @@ export default function Home() {
             <div className="card">
               <h3 className="card-title">Market Expertise</h3>
               <p>
-                Deep understanding of global energy markets with real-time
-                analysis and strategic insights across LNG, LPG, and crude oil
-                sectors.
+                Strong understanding of energy trading fundamentals across LNG,
+                LPG, and crude oil markets, supported by ongoing research into
+                regional pricing, logistics, and supply trends. INTERGAS
+                combines this insight with practical experience in contract
+                negotiation and supply chain coordination.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Global Network</h3>
+              <h3 className="card-title">Growing Network</h3>
               <p>
-                Extensive partnerships spanning producers, transporters, and
-                distributors across Asia-Pacific, Middle East, and international
-                markets.
+                Developing a reliable network of suppliers, buyers, and
+                logistics partners across Australia, Asia-Pacific, Europe, and
+                the Middle East. INTERGAS prioritises transparency and trust to
+                build long-term commercial relationships with both emerging and
+                established market participants.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Risk Management</h3>
+              <h3 className="card-title">Risk & Compliance</h3>
               <p>
-                Advanced hedging strategies and comprehensive risk assessment
-                protocols ensuring secure transactions and market volatility
-                protection.
+                Emphasis on prudent risk management through careful exposure
+                control, due diligence, and contract structuring. INTERGAS aims
+                to ensure all transactions meet international compliance
+                standards and mitigate counterparty, credit, and operational
+                risks.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Technology Integration</h3>
+              <h3 className="card-title">Technology & Efficiency</h3>
               <p>
-                Cutting-edge trading platforms with automated systems, real-time
-                monitoring, and data-driven decision making capabilities.
+                Integration of modern digital tools for market tracking, pricing
+                analysis, and trade management. The company continues to explore
+                scalable trading systems and data analytics to enhance
+                decision-making efficiency as trading volumes grow.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Market Leadership</h3>
+              <h3 className="card-title">Strategic Positioning</h3>
               <p>
-                Strategic positioning as Australia's premier energy trading
-                intermediary, leveraging deep market knowledge to secure optimal
-                pricing and reliable supply chains.
+                Positioned as an agile, data-informed intermediary serving both
+                domestic and international markets. INTERGAS focuses on
+                competitive pricing, reliable supply coordination, and flexible
+                contract structures to support buyers and producers alike.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Growth Vision</h3>
+              <h3 className="card-title">Sustainable Growth Vision</h3>
               <p>
-                Aggressive expansion across Asia-Pacific markets with focus on
-                renewable energy integration and sustainable trading practices
-                for long-term market dominance.
+                Focused on steady expansion within the Asia-Pacific region, with
+                attention to operational sustainability, efficiency, and
+                alignment with evolving market demands — including gradual
+                diversification toward low-carbon fuels and renewable gas
+                solutions.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Innovation Strategy</h3>
+              <h3 className="card-title">Innovation Approach</h3>
               <p>
-                Continuous investment in blockchain technology, AI-driven market
-                analysis, and automated trading systems to maintain competitive
-                edge in digital transformation.
+                Pragmatic approach to innovation by adopting proven digital and
+                analytical tools before scaling to advanced automation or AI
+                systems. INTERGAS invests selectively in technology that
+                enhances reliability, transparency, and customer engagement.
               </p>
             </div>
+
             <div className="card">
-              <h3 className="card-title">Sustainable Practices</h3>
+              <h3 className="card-title">Responsible Operations</h3>
               <p>
-                Environmental responsibility through carbon-neutral operations,
-                green energy partnerships, and ESG-compliant trading practices
-                aligned with global climate goals.
+                Commitment to ethical trading, environmental responsibility, and
+                efficient energy use across all operations. INTERGAS supports
+                ESG-aligned initiatives and aims to progressively integrate
+                carbon tracking and reporting into its trading framework.
               </p>
             </div>
           </div>

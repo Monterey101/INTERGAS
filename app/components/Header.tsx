@@ -12,35 +12,84 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="header-container">
         <Link href="/" className="logo">
-          INTERGAS
+          <img src="/INTERGAS_PTY_LTD_LOGO.svg" alt="" className="logo-svg" />
+          <div>
+            INTERGAS <span className="logo-suffix">Pty Ltd</span>
+          </div>
         </Link>
         <nav className="nav">
-          <Link href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
-          <Link href="/commodities" className={`nav-link ${pathname === '/commodities' ? 'active' : ''}`}>Commodities</Link>
-          <Link href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
-          <Link href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>Contact</Link>
+          <Link
+            href="/"
+            className={`nav-link ${pathname === "/" ? "active" : ""}`}
+          >
+            Home
+          </Link>
+          <Link
+            href="/commodities"
+            className={`nav-link ${
+              pathname === "/commodities" ? "active" : ""
+            }`}
+          >
+            Commodities
+          </Link>
+          <Link
+            href="/about"
+            className={`nav-link ${pathname === "/about" ? "active" : ""}`}
+          >
+            About
+          </Link>
+          <Link
+            href="/contact"
+            className={`nav-link ${pathname === "/contact" ? "active" : ""}`}
+          >
+            Contact
+          </Link>
         </nav>
-        <button 
+        <button
           className="mobile-menu-btn"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`hamburger ${isOpen ? 'open' : ''}`}></span>
+          <span className={`hamburger ${isOpen ? "open" : ""}`}></span>
         </button>
       </div>
-      <div className={`mobile-nav ${isOpen ? 'open' : ''}`}>
-        <Link href="/" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link href="/commodities" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Commodities</Link>
-        <Link href="/about" className="mobile-nav-link" onClick={() => setIsOpen(false)}>About</Link>
-        <Link href="/contact" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
+      <div className={`mobile-nav ${isOpen ? "open" : ""}`}>
+        <Link
+          href="/"
+          className="mobile-nav-link"
+          onClick={() => setIsOpen(false)}
+        >
+          Home
+        </Link>
+        <Link
+          href="/commodities"
+          className="mobile-nav-link"
+          onClick={() => setIsOpen(false)}
+        >
+          Commodities
+        </Link>
+        <Link
+          href="/about"
+          className="mobile-nav-link"
+          onClick={() => setIsOpen(false)}
+        >
+          About
+        </Link>
+        <Link
+          href="/contact"
+          className="mobile-nav-link"
+          onClick={() => setIsOpen(false)}
+        >
+          Contact
+        </Link>
       </div>
     </header>
   );

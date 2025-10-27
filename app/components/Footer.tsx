@@ -7,7 +7,14 @@ export default function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <Link href="/" className="footer-logo">
-              INTERGAS
+              <img
+                src="/INTERGAS_PTY_LTD_LOGO.svg"
+                alt=""
+                className="footer-logo-svg"
+              />
+              <div>
+                INTERGAS <span className="logo-suffix">Pty Ltd</span>
+              </div>
             </Link>
             <p className="footer-tagline">
               Energy Brokerage & Trade Facilitation
@@ -33,7 +40,7 @@ export default function Footer() {
             <div className="footer-section">
               <h3 className="footer-heading">Company</h3>
               <Link href="/about" className="footer-link">
-                About INTERGAS
+                About Us
               </Link>
               <Link href="/about" className="footer-link">
                 Leadership Team
@@ -61,16 +68,17 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-legal">
             <p className="footer-copyright">
-              © 2025 INTERGAS. All rights reserved.
+              Copyright © 2025 Intergas Pty Ltd. All rights reserved.
             </p>
-            <p className="footer-abn">ABN NN NNN NNN NNN | AFSL NNNNNN</p>
+            <p className="footer-abn">ABN 98 691 680 725 | AFSL [Pending]</p>
           </div>
           <div className="footer-certifications">
-            <span>ISO NNNN:NNNN Certified</span>
-            <span>•</span>
-            <span>XXXX Regulated</span>
-            <span>•</span>
-            <span>Member XXXX</span>
+            {/* <span>ISO NNNN:NNNN Certified</span>
+            <span>•</span> */}
+            <span>
+              Australian Securities and Investments Commission Registered &
+              Regulated
+            </span>
           </div>
         </div>
       </div>
