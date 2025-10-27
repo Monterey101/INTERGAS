@@ -123,6 +123,7 @@ export default function Contact() {
                 >
                   <option value="">Select your industry</option>
                   <option value="energy-production">Energy Production</option>
+                  <option value="distribution">Distribution</option>
                   <option value="oil-gas">Oil & Gas</option>
                   <option value="petrochemicals">Petrochemicals</option>
                   <option value="utilities">Utilities</option>
