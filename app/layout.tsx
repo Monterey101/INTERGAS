@@ -4,6 +4,9 @@ import Footer from "./components/Footer";
 
 export const metadata = {
   title: "INTERGAS - Energy Brokerage & Trade Facilitation",
+  icons: {
+    icon: "/INTERGAS_PTY_LTD_LOGO.svg",
+  },
 };
 
 export default function RootLayout({
