@@ -9,7 +9,7 @@ export default function Terms() {
         <div className="legal-container">
           <div className="legal-content">
             {/* <p className="legal-updated">Last updated: {new Date().toLocaleDateString()}</p> */}
-            <p className="legal-updated">Last updated: 27 October 2025</p>
+            <p className="legal-updated">Last updated: 17 November 2025</p>
 
             <h2>1. Acceptance of Terms</h2>
             <p>
@@ -99,9 +99,11 @@ export default function Terms() {
               For questions regarding this Privacy Policy or Terms of Service,
               please contact INTERGAS through our website’s contact form or via
               email at{" "}
-              <a href="mailto:info@intergas.com.au">info@intergas.com.au</a>. We
-              will make every effort to respond to inquiries in a timely and
-              professional manner.
+              <a href="mailto:contact@intergas.com.au">
+                contact@intergas.com.au
+              </a>
+              . We will make every effort to respond to inquiries in a timely
+              and professional manner.
             </p>
           </div>
         </div>

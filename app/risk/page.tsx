@@ -10,7 +10,7 @@ export default function Risk() {
           <div className="legal-content">
             <p className="legal-updated">
               {/* Last updated: {new Date().toLocaleDateString()} */}
-              Last updated: 27 October 2025
+              Last updated: 17 November 2025
             </p>
 
             <h2>1. Introduction</h2>
@@ -153,8 +153,8 @@ export default function Risk() {
               <br />
               <br />
               Email:{" "}
-              <a href="mailto:info@intergas.com.au">
-                info@intergas.com.au
+              <a href="mailto:contact@intergas.com.au">
+                contact@intergas.com.au
               </a>{" "}
               <br />
               <br />

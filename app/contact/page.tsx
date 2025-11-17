@@ -194,7 +194,7 @@ export default function Contact() {
               <div className="contact-info-icon">📧</div>
               <div className="contact-info-content">
                 <h3>Email</h3>
-                <p>info@intergas.com.au</p>
+                <p>contact@intergas.com.au</p>
                 <p className="contact-info-note">Response times may vary</p>
               </div>
             </div>
