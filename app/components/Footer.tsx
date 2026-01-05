@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-legal">
             <p className="footer-copyright">
-              Copyright © 2025 Intergas Pty Ltd. All rights reserved.
+              Copyright © 2026 Intergas Pty Ltd. All rights reserved.
             </p>
             <p className="footer-abn">ABN 98 691 680 725 | AFSL [Pending]</p>
           </div>
